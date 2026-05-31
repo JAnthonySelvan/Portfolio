@@ -5,9 +5,15 @@ const educationData = [
   {
     degree: 'Bachelor of Engineering',
     field: 'Computer Science Engineering',
+<<<<<<< HEAD
     institution: 'AAA College of Engineering and Technology',
     location: 'sivakasi, Tamil Nadu',
     duration: '2023 - Present',
+=======
+    institution: 'Engineering College',
+    location: 'India',
+    duration: '2022 - Present',
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
     status: 'Pursuing',
     coursework: [
       'Data Structures & Algorithms',

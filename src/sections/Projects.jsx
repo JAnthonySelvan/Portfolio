@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { motion } from "framer-motion";
 import {
   ExternalLink,
@@ -62,6 +63,38 @@ export default function Projects() {
       id="projects"
       className="section-padding bg-gray-50 dark:bg-slate-800/50"
     >
+=======
+import { motion } from 'framer-motion';
+import { ExternalLink, Github, Check, Layers, Server, Database, Cloud, Shield, Moon, Smartphone, Users, Settings, Palette, Bell } from 'lucide-react';
+import { TechIcon } from '../components/TechIcon';
+
+const techStack = [
+  'React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Cloudinary', 'Tailwind'
+];
+
+const features = [
+  { icon: Shield, text: 'JWT Authentication', color: 'text-blue-500' },
+  { icon: Users, text: 'Role-Based Access Control', color: 'text-green-500' },
+  { icon: Cloud, text: 'Resume Upload using Cloudinary', color: 'text-purple-500' },
+  { icon: Layers, text: 'Interview Scheduling', color: 'text-orange-500' },
+  { icon: Bell, text: 'Email Notifications', color: 'text-pink-500' },
+  { icon: Moon, text: 'Dark Mode', color: 'text-indigo-500' },
+  { icon: Smartphone, text: 'Responsive Design', color: 'text-cyan-500' },
+  { icon: Settings, text: 'Admin Dashboard', color: 'text-red-500' },
+  { icon: Palette, text: 'Recruiter Dashboard', color: 'text-amber-500' },
+];
+
+const architectureLayers = [
+  { label: 'Frontend', tech: 'React + Redux + Tailwind CSS', icon: Layers },
+  { label: 'Backend', tech: 'Node.js + Express.js', icon: Server },
+  { label: 'Database', tech: 'MongoDB + MongoDB Atlas', icon: Database },
+  { label: 'Services', tech: 'Cloudinary + Brevo Email', icon: Cloud },
+];
+
+export default function Projects() {
+  return (
+    <section id="projects" className="section-padding bg-gray-50 dark:bg-slate-800/50">
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -112,7 +145,11 @@ export default function Projects() {
                   Live Demo
                 </motion.a>
                 <motion.a
+<<<<<<< HEAD
                   href="https://github.com/JAnthonySelvan/MERN-JOB_PORTAL"
+=======
+                  href="#"
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                   className="flex items-center gap-2 px-6 py-3 bg-white/20 text-white font-semibold rounded-xl hover:bg-white/30 transition-colors"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -129,10 +166,14 @@ export default function Projects() {
             {/* Description */}
             <div className="mb-8">
               <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+<<<<<<< HEAD
                 A production-ready job portal developed using the MERN Stack
                 that streamlines recruitment by connecting job seekers,
                 recruiters, and administrators through a modern recruitment
                 platform.
+=======
+                A production-ready job portal developed using the MERN Stack that streamlines recruitment by connecting job seekers, recruiters, and administrators through a modern recruitment platform.
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               </p>
             </div>
 
@@ -144,11 +185,61 @@ export default function Projects() {
               transition={{ delay: 0.2 }}
               className="mb-8"
             >
+<<<<<<< HEAD
               <img
                 src={theme === "dark" ? ScreenshotDark : ScreenshotLight}
                 alt="Project Preview"
                 className="w-full rounded-xl shadow-lg border border-gray-300 dark:border-gray-700"
               />
+=======
+              <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-slate-700 dark:to-slate-800 aspect-video shadow-xl">
+                {/* Mock Browser Chrome */}
+                <div className="flex items-center gap-2 px-4 py-3 bg-gray-200 dark:bg-slate-900">
+                  <div className="flex gap-1.5">
+                    <div className="w-3 h-3 rounded-full bg-red-500" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500" />
+                    <div className="w-3 h-3 rounded-full bg-green-500" />
+                  </div>
+                  <div className="flex-1 mx-4 px-4 py-1.5 bg-white dark:bg-slate-800 rounded-lg text-sm text-gray-500 truncate">
+                    job-junction-lime.vercel.app
+                  </div>
+                </div>
+
+                {/* Mock Content */}
+                <div className="p-6 space-y-4">
+                  {/* Header */}
+                  <div className="flex items-center justify-between">
+                    <div className="text-xl font-bold text-primary">JobJunction</div>
+                    <div className="flex gap-2">
+                      <div className="w-16 h-8 bg-primary/20 dark:bg-primary-dark/20 rounded" />
+                      <div className="w-16 h-8 bg-primary/20 dark:bg-primary-dark/20 rounded" />
+                    </div>
+                  </div>
+
+                  {/* Search */}
+                  <div className="flex gap-4">
+                    <div className="flex-1 h-10 bg-white dark:bg-slate-800 rounded-lg shadow-sm" />
+                    <div className="w-24 h-10 bg-primary rounded-lg" />
+                  </div>
+
+                  {/* Cards Grid */}
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="h-24 bg-white dark:bg-slate-700 rounded-xl shadow-sm" />
+                    <div className="h-24 bg-white dark:bg-slate-700 rounded-xl shadow-sm" />
+                    <div className="h-24 bg-white dark:bg-slate-700 rounded-xl shadow-sm" />
+                  </div>
+
+                  {/* Bottom */}
+                  <div className="flex justify-between items-center">
+                    <div className="h-4 w-32 bg-gray-300 dark:bg-slate-600 rounded" />
+                    <div className="flex gap-2">
+                      <div className="w-8 h-8 bg-gray-200 dark:bg-slate-700 rounded-full" />
+                      <div className="w-8 h-8 bg-gray-200 dark:bg-slate-700 rounded-full" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             </motion.div>
 
             {/* Technology Stack */}
@@ -168,9 +259,13 @@ export default function Projects() {
                     className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-slate-700 rounded-xl shadow-sm hover:shadow-md transition-all"
                   >
                     <TechIcon name={tech} className="w-5 h-5" />
+<<<<<<< HEAD
                     <span className="font-medium text-gray-700 dark:text-gray-300">
                       {tech}
                     </span>
+=======
+                    <span className="font-medium text-gray-700 dark:text-gray-300">{tech}</span>
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                   </motion.div>
                 ))}
               </div>
@@ -193,6 +288,7 @@ export default function Projects() {
                       transition={{ delay: index * 0.05 }}
                       className="flex items-center gap-2 p-2"
                     >
+<<<<<<< HEAD
                       <div
                         className={`w-6 h-6 rounded-full bg-gray-100 dark:bg-slate-700 flex items-center justify-center`}
                       >
@@ -201,6 +297,12 @@ export default function Projects() {
                       <span className="text-sm text-gray-700 dark:text-gray-300">
                         {feature.text}
                       </span>
+=======
+                      <div className={`w-6 h-6 rounded-full bg-gray-100 dark:bg-slate-700 flex items-center justify-center`}>
+                        <Check className={`w-4 h-4 ${feature.color}`} />
+                      </div>
+                      <span className="text-sm text-gray-700 dark:text-gray-300">{feature.text}</span>
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                     </motion.div>
                   ))}
                 </div>
@@ -225,12 +327,17 @@ export default function Projects() {
                         <layer.icon className="w-5 h-5 text-primary dark:text-primary-dark" />
                       </div>
                       <div>
+<<<<<<< HEAD
                         <p className="font-semibold text-gray-800 dark:text-gray-200">
                           {layer.label}
                         </p>
                         <p className="text-sm text-gray-500 dark:text-gray-400">
                           {layer.tech}
                         </p>
+=======
+                        <p className="font-semibold text-gray-800 dark:text-gray-200">{layer.label}</p>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">{layer.tech}</p>
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                       </div>
                     </motion.div>
                   ))}
@@ -249,9 +356,13 @@ export default function Projects() {
                     <TechIcon name="Vercel" className="w-8 h-8" />
                   </div>
                   <div>
+<<<<<<< HEAD
                     <p className="font-semibold text-gray-800 dark:text-gray-200">
                       Frontend
                     </p>
+=======
+                    <p className="font-semibold text-gray-800 dark:text-gray-200">Frontend</p>
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                     <a
                       href="https://job-junction-lime.vercel.app/"
                       target="_blank"
@@ -267,9 +378,13 @@ export default function Projects() {
                     <TechIcon name="Render" className="w-8 h-8" />
                   </div>
                   <div>
+<<<<<<< HEAD
                     <p className="font-semibold text-gray-800 dark:text-gray-200">
                       Backend API
                     </p>
+=======
+                    <p className="font-semibold text-gray-800 dark:text-gray-200">Backend API</p>
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                     <a
                       href="https://mern-job-portal-m2pc.onrender.com/"
                       target="_blank"

@@ -17,7 +17,11 @@ export default function Footer() {
             className="text-center md:text-left"
           >
             <h3 className="text-2xl font-poppins font-bold text-gradient mb-2">
+<<<<<<< HEAD
               ANTHONYSELVAN J
+=======
+              Anthony Selvan
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             </h3>
             <p className="text-gray-400 text-sm">
               MERN Stack Developer | Building Scalable Web Applications and AI-Driven Solutions
@@ -36,7 +40,11 @@ export default function Footer() {
               Made with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> in India
             </p>
             <p className="text-gray-500 text-sm mt-2">
+<<<<<<< HEAD
               &copy; {currentYear} ANTHONYSELVAN. All Rights Reserved.
+=======
+              &copy; {currentYear} Anthony Selvan. All Rights Reserved.
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             </p>
           </motion.div>
 
@@ -49,7 +57,11 @@ export default function Footer() {
             className="flex justify-center md:justify-end gap-3"
           >
             <motion.a
+<<<<<<< HEAD
               href="https://github.com/JAnthonySelvan"
+=======
+              href="https://github.com/anthony-selvan"
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -3 }}
@@ -60,7 +72,11 @@ export default function Footer() {
               <Github className="w-5 h-5" />
             </motion.a>
             <motion.a
+<<<<<<< HEAD
               href="https://www.linkedin.com/in/anthonyselvan-j"
+=======
+              href="https://linkedin.com/in/anthony-selvan"
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -3 }}
@@ -73,7 +89,11 @@ export default function Footer() {
               </svg>
             </motion.a>
             <motion.a
+<<<<<<< HEAD
               href="mailto:janthonyselvan07@gmail.com"
+=======
+              href="mailto:anthonyselvan@email.com"
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               whileHover={{ scale: 1.1, y: -3 }}
               whileTap={{ scale: 0.95 }}
               className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"
@@ -93,7 +113,11 @@ export default function Footer() {
           className="mt-8 pt-8 border-t border-gray-800 text-center"
         >
           <p className="text-gray-500 text-xs">
+<<<<<<< HEAD
             Designed & Built by ANTHONYSELVAN J
+=======
+            Designed & Built by Anthony Selvan J
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
           </p>
         </motion.div>
       </div>

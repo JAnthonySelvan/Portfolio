@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion';
+<<<<<<< HEAD
 import { ArrowDown, Download, Mail, ExternalLink,View } from 'lucide-react';
 import { TechIcon } from '../components/TechIcon';
 import Resume from "../../assets/My Resume.pdf";
+=======
+import { ArrowDown, Download, Mail, ExternalLink } from 'lucide-react';
+import { TechIcon } from '../components/TechIcon';
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
 
 const floatingIcons = [
   { name: 'React', delay: 0, x: -120, y: -80 },
@@ -63,7 +68,11 @@ export default function Home() {
         transition={{
           duration: 8,
           repeat: Infinity,
+<<<<<<< HEAD
           ease: "easeInOut",
+=======
+          ease: 'easeInOut',
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
         }}
       />
       <motion.div
@@ -75,7 +84,11 @@ export default function Home() {
         transition={{
           duration: 8,
           repeat: Infinity,
+<<<<<<< HEAD
           ease: "easeInOut",
+=======
+          ease: 'easeInOut',
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
           delay: 1,
         }}
       />
@@ -108,7 +121,12 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
+<<<<<<< HEAD
               Hi, I'm <span className="text-gradient">ANTHONYSELVAN J</span>
+=======
+              Hi, I'm{' '}
+              <span className="text-gradient">Anthony Selvan</span>
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             </motion.h1>
 
             <motion.h2
@@ -117,8 +135,12 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
+<<<<<<< HEAD
               MERN Stack Developer | Building Scalable Web Applications and
               AI-Driven Solutions
+=======
+              MERN Stack Developer | Building Scalable Web Applications and AI-Driven Solutions
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             </motion.h2>
 
             <motion.p
@@ -127,9 +149,13 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
+<<<<<<< HEAD
               Computer Science Engineering Student passionate about building
               modern full-stack applications, cloud-powered systems, and
               intelligent software solutions.
+=======
+              Computer Science Engineering Student passionate about building modern full-stack applications, cloud-powered systems, and intelligent software solutions.
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             </motion.p>
 
             {/* CTA Buttons */}
@@ -150,13 +176,22 @@ export default function Home() {
               </motion.button>
 
               <motion.a
+<<<<<<< HEAD
                 href="https://drive.google.com/file/d/1U5hnzrKu1prPly4noMqE4jVFJYTByHeS/view?usp=sharing"
+=======
+                href="#"
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                 className="btn-secondary flex items-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
+<<<<<<< HEAD
                 <View size={22} />
                 View Resume
+=======
+                <Download size={18} />
+                Download Resume
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               </motion.a>
 
               <motion.button
@@ -184,22 +219,30 @@ export default function Home() {
               <motion.div
                 className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-accent opacity-10 blur-2xl"
                 animate={{ scale: [1, 1.05, 1] }}
+<<<<<<< HEAD
                 transition={{
                   duration: 4,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
+=======
+                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               />
 
               {/* Profile Image Container */}
               <motion.div
                 className="absolute inset-4 rounded-full glass-card flex items-center justify-center overflow-hidden"
                 animate={{ rotate: [0, 2, 0, -2, 0] }}
+<<<<<<< HEAD
                 transition={{
                   duration: 6,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
+=======
+                transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               >
                 {/* Developer Illustration */}
                 <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center">
@@ -209,6 +252,7 @@ export default function Home() {
                     fill="currentColor"
                   >
                     {/* Simple Developer Icon */}
+<<<<<<< HEAD
                     <circle
                       cx="100"
                       cy="50"
@@ -281,6 +325,18 @@ export default function Home() {
                       fill="currentColor"
                       opacity="0.5"
                     />
+=======
+                    <circle cx="100" cy="50" r="30" fill="currentColor" opacity="0.8" />
+                    <rect x="60" y="85" width="80" height="60" rx="10" fill="currentColor" opacity="0.6" />
+                    <rect x="40" y="150" width="120" height="8" rx="4" fill="currentColor" opacity="0.4" />
+                    {/* Laptop */}
+                    <rect x="70" y="100" width="60" height="40" rx="5" fill="white" opacity="0.9" />
+                    <rect x="75" y="105" width="50" height="30" rx="3" fill="currentColor" opacity="0.3" />
+                    {/* Code Lines */}
+                    <rect x="80" y="110" width="30" height="3" rx="1" fill="currentColor" opacity="0.5" />
+                    <rect x="80" y="117" width="40" height="3" rx="1" fill="currentColor" opacity="0.5" />
+                    <rect x="80" y="124" width="25" height="3" rx="1" fill="currentColor" opacity="0.5" />
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                   </svg>
                 </div>
               </motion.div>
@@ -291,8 +347,13 @@ export default function Home() {
                   key={icon.name}
                   className="absolute"
                   style={{
+<<<<<<< HEAD
                     top: "50%",
                     left: "50%",
+=======
+                    top: '50%',
+                    left: '50%',
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                   }}
                   initial={{ x: icon.x, y: icon.y, opacity: 0 }}
                   animate={{
@@ -309,7 +370,11 @@ export default function Home() {
                     transition={{
                       duration: 3,
                       repeat: Infinity,
+<<<<<<< HEAD
                       ease: "easeInOut",
+=======
+                      ease: 'easeInOut',
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                       delay: icon.delay,
                     }}
                     className="p-3 glass-card rounded-xl shadow-lg"
@@ -333,11 +398,15 @@ export default function Home() {
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
             className="p-2 rounded-full bg-gray-100 dark:bg-slate-800 cursor-pointer"
+<<<<<<< HEAD
             onClick={() =>
               document
                 .querySelector("#about")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
+=======
+            onClick={() => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })}
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
           >
             <ArrowDown className="w-6 h-6 text-primary dark:text-primary-dark" />
           </motion.div>

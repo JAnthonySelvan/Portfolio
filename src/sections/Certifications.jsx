@@ -6,9 +6,15 @@ const certifications = [
     title: 'NPTEL Cloud Computing',
     issuer: 'NPTEL',
     issuerLogo: 'https://upload.wikimedia.org/wikipedia/en/f/f8/NPTEL_logo.png',
+<<<<<<< HEAD
     date: '2025',
     skills: ['Cloud Architecture', 'Virtualization', 'Distributed Systems', 'Cloud Services'],
     credentialUrl: 'https://drive.google.com/file/d/157J0e32KvOEV0omMK1FJrvoZB-NduBQz/view?usp=drive_link',
+=======
+    date: '2024',
+    skills: ['Cloud Architecture', 'Virtualization', 'Distributed Systems', 'Cloud Services'],
+    credentialUrl: '#',
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
     description: 'Comprehensive course covering cloud computing fundamentals, architecture patterns, and deployment strategies across major cloud platforms.',
   },
 ];

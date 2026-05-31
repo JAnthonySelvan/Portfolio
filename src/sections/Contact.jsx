@@ -5,6 +5,7 @@ import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle } from 'lucide
 const contactInfo = [
   {
     icon: Mail,
+<<<<<<< HEAD
     label: "Email",
     value: "janthonyselvan07@gmail.com",
     href: "mailto:janthonyselvan07@gmail.com",
@@ -26,6 +27,35 @@ const contactInfo = [
     label: "LinkedIn",
     value: "linkedin.com/in/anthonyselvan-j/",
     href: "https://www.linkedin.com/in/anthonyselvan-j",
+=======
+    label: 'Email',
+    value: 'anthonyselvan@email.com',
+    href: 'mailto:anthonyselvan@email.com',
+  },
+  {
+    icon: Phone,
+    label: 'Phone',
+    value: '+91 XXXXX XXXXX',
+    href: 'tel:+91XXXXXXXXXX',
+  },
+  {
+    icon: MapPin,
+    label: 'Location',
+    value: 'India',
+    href: '#',
+  },
+  {
+    icon: Github,
+    label: 'GitHub',
+    value: 'github.com/anthony-selvan',
+    href: 'https://github.com/anthony-selvan',
+  },
+  {
+    icon: Linkedin,
+    label: 'LinkedIn',
+    value: 'linkedin.com/in/anthony-selvan',
+    href: 'https://linkedin.com/in/anthony-selvan',
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
   },
 ];
 
@@ -66,8 +96,12 @@ export default function Contact() {
             Get in <span className="text-gradient">Touch</span>
           </h2>
           <p className="section-subtitle">
+<<<<<<< HEAD
             Have a project in mind? Let's work together to bring your ideas to
             life.
+=======
+            Have a project in mind? Let's work together to bring your ideas to life.
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
           </p>
         </motion.div>
 
@@ -83,9 +117,13 @@ export default function Contact() {
               Contact Information
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
+<<<<<<< HEAD
               Feel free to reach out through any of the following channels. I'm
               always open to discussing new projects, creative ideas, or
               opportunities to be part of your vision.
+=======
+              Feel free to reach out through any of the following channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             </p>
 
             <div className="space-y-4">
@@ -93,12 +131,17 @@ export default function Contact() {
                 <motion.a
                   key={item.label}
                   href={item.href}
+<<<<<<< HEAD
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={
                     item.href.startsWith("http")
                       ? "noopener noreferrer"
                       : undefined
                   }
+=======
+                  target={item.href.startsWith('http') ? '_blank' : undefined}
+                  rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -110,12 +153,17 @@ export default function Contact() {
                     <item.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
+<<<<<<< HEAD
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       {item.label}
                     </p>
                     <p className="font-medium text-gray-800 dark:text-gray-200">
                       {item.value}
                     </p>
+=======
+                    <p className="text-sm text-gray-500 dark:text-gray-400">{item.label}</p>
+                    <p className="font-medium text-gray-800 dark:text-gray-200">{item.value}</p>
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                   </div>
                 </motion.a>
               ))}
@@ -130,7 +178,11 @@ export default function Contact() {
               className="mt-8 flex gap-3"
             >
               <motion.a
+<<<<<<< HEAD
                 href="https://github.com/JAnthonySelvan"
+=======
+                href="https://github.com/anthony-selvan"
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -3 }}
@@ -140,7 +192,11 @@ export default function Contact() {
                 <Github className="w-5 h-5 text-gray-700 dark:text-gray-300" />
               </motion.a>
               <motion.a
+<<<<<<< HEAD
                 href="https://www.linkedin.com/in/anthonyselvan-j"
+=======
+                href="https://linkedin.com/in/anthony-selvan"
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -3 }}
@@ -148,11 +204,19 @@ export default function Contact() {
                 className="w-12 h-12 rounded-xl bg-gray-100 dark:bg-slate-700 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-slate-600 transition-colors"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="#0077B5">
+<<<<<<< HEAD
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
               </motion.a>
               <motion.a
                 href="mailto:janthonyselvan07@gmail.com"
+=======
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </motion.a>
+              <motion.a
+                href="mailto:anthonyselvan@email.com"
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                 whileHover={{ scale: 1.1, y: -3 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-12 h-12 rounded-xl bg-gray-100 dark:bg-slate-700 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-slate-600 transition-colors"
@@ -183,7 +247,11 @@ export default function Contact() {
                   <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
+<<<<<<< HEAD
                     transition={{ delay: 0.2, type: "spring" }}
+=======
+                    transition={{ delay: 0.2, type: 'spring' }}
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                     className="w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-4"
                   >
                     <CheckCircle className="w-8 h-8 text-green-500" />
@@ -209,9 +277,13 @@ export default function Contact() {
                       type="text"
                       id="name"
                       value={formData.name}
+<<<<<<< HEAD
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
+=======
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                       required
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-800 dark:text-gray-200 focus:border-primary dark:focus:border-primary-dark focus:ring-2 focus:ring-primary/20 dark:focus:ring-primary-dark/20 transition-all outline-none"
                       placeholder="John Doe"
@@ -230,9 +302,13 @@ export default function Contact() {
                       type="email"
                       id="email"
                       value={formData.email}
+<<<<<<< HEAD
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
+=======
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                       required
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-800 dark:text-gray-200 focus:border-primary dark:focus:border-primary-dark focus:ring-2 focus:ring-primary/20 dark:focus:ring-primary-dark/20 transition-all outline-none"
                       placeholder="john@example.com"
@@ -250,9 +326,13 @@ export default function Contact() {
                     <textarea
                       id="message"
                       value={formData.message}
+<<<<<<< HEAD
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
                       }
+=======
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                       required
                       rows={5}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-800 dark:text-gray-200 focus:border-primary dark:focus:border-primary-dark focus:ring-2 focus:ring-primary/20 dark:focus:ring-primary-dark/20 transition-all outline-none resize-none"
@@ -271,11 +351,15 @@ export default function Contact() {
                     {isSubmitting ? (
                       <motion.div
                         animate={{ rotate: 360 }}
+<<<<<<< HEAD
                         transition={{
                           duration: 1,
                           repeat: Infinity,
                           ease: "linear",
                         }}
+=======
+                        transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+>>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                         className="w-5 h-5 border-2 border-white border-t-transparent rounded-full"
                       />
                     ) : (
