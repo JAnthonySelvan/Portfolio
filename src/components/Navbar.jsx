@@ -22,16 +22,32 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const handleNavClick = (href) => {
     setMobileMenuOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+
+    setTimeout(() => {
+      const element = document.querySelector(href);
+
+      if (element) {
+        const navbarHeight = 90;
+
+        const elementPosition =
+          element.getBoundingClientRect().top + window.pageYOffset;
+
+        window.scrollTo({
+          top: elementPosition - navbarHeight,
+          behavior: "smooth",
+        });
+      }
+    }, 300);
   };
 
   return (
@@ -75,16 +91,19 @@ export default function Navbar() {
                 whileHover={{ y: -2 }}
               >
                 {item.name}
+
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary dark:bg-primary-dark group-hover:w-3/4 transition-all duration-300" />
               </motion.a>
             ))}
           </div>
 
-          {/* Right Side Actions */}
+          {/* Right Actions */}
           <div className="flex items-center gap-2">
-            {/* Resume Button - Desktop */}
+            {/* Resume Button */}
             <motion.a
               href="https://drive.google.com/uc?export=download&id=13mTsvgkVX9Z9O93-ZGuv7MFVBI1zp_bf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden lg:flex items-center gap-2 px-4 py-2 bg-primary dark:bg-primary-dark text-white rounded-lg font-medium text-sm hover:bg-primary/90 dark:hover:bg-primary-dark/90 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -99,7 +118,7 @@ export default function Navbar() {
               className="p-2.5 rounded-lg bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors"
               whileHover={{ scale: 1.1, rotate: 15 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Toggle theme"
+              aria-label="Toggle Theme"
             >
               <AnimatePresence mode="wait">
                 {theme === "light" ? (
@@ -108,7 +127,6 @@ export default function Navbar() {
                     initial={{ rotate: -90, opacity: 0 }}
                     animate={{ rotate: 0, opacity: 1 }}
                     exit={{ rotate: 90, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
                   >
                     <Moon size={20} />
                   </motion.div>
@@ -118,7 +136,6 @@ export default function Navbar() {
                     initial={{ rotate: 90, opacity: 0 }}
                     animate={{ rotate: 0, opacity: 1 }}
                     exit={{ rotate: -90, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
                   >
                     <Sun size={20} />
                   </motion.div>
@@ -128,11 +145,11 @@ export default function Navbar() {
 
             {/* Mobile Menu Button */}
             <motion.button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={() => setMobileMenuOpen((prev) => !prev)}
               className="lg:hidden p-2.5 rounded-lg bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Toggle menu"
+              aria-label="Toggle Menu"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </motion.button>
@@ -140,7 +157,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Navigation */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -161,17 +178,24 @@ export default function Navbar() {
                   }}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.05 }}
+                  transition={{
+                    delay: index * 0.05,
+                  }}
                   className="block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 font-medium transition-colors"
                 >
                   {item.name}
                 </motion.a>
               ))}
+
               <motion.a
-                href="https://drive.google.com/uc?export=download&id=1U5hnzrKu1prPly4noMqE4jVFJYTByHeS"
+                href="https://drive.google.com/uc?export=download&id=13mTsvgkVX9Z9O93-ZGuv7MFVBI1zp_bf"
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: navItems.length * 0.05 }}
+                transition={{
+                  delay: navItems.length * 0.05,
+                }}
                 className="flex items-center justify-center gap-2 mt-4 px-4 py-3 bg-primary dark:bg-primary-dark text-white rounded-lg font-medium"
               >
                 <Download size={18} />
