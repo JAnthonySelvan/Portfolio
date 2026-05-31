@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Icons that have white paths and need a dark background
+const darkBgIcons = new Set(['Vercel', 'Express']);
+
 const techIcons = {
   'React': (
     <svg viewBox="0 0 24 24" className="w-full h-full">
@@ -125,6 +128,15 @@ export function TechIcon({ name, className = 'w-12 h-12' }) {
     return (
       <div className={`${className} rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center`}>
         <span className="text-xs font-semibold text-gray-600 dark:text-gray-300">{name.slice(0, 2)}</span>
+      </div>
+    );
+  }
+
+  // Icons with white paths need a dark background to be visible
+  if (darkBgIcons.has(name)) {
+    return (
+      <div className={`${className} rounded-lg bg-gray-800 flex items-center justify-center p-1`}>
+        {icon}
       </div>
     );
   }

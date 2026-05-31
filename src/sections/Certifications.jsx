@@ -1,27 +1,31 @@
-import { motion } from 'framer-motion';
-import { Award, Calendar, ExternalLink, Check } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Award, Calendar, ExternalLink, Check } from "lucide-react";
 
 const certifications = [
   {
-    title: 'NPTEL Cloud Computing',
-    issuer: 'NPTEL',
-    issuerLogo: 'https://upload.wikimedia.org/wikipedia/en/f/f8/NPTEL_logo.png',
-<<<<<<< HEAD
-    date: '2025',
-    skills: ['Cloud Architecture', 'Virtualization', 'Distributed Systems', 'Cloud Services'],
-    credentialUrl: 'https://drive.google.com/file/d/157J0e32KvOEV0omMK1FJrvoZB-NduBQz/view?usp=drive_link',
-=======
-    date: '2024',
-    skills: ['Cloud Architecture', 'Virtualization', 'Distributed Systems', 'Cloud Services'],
-    credentialUrl: '#',
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
-    description: 'Comprehensive course covering cloud computing fundamentals, architecture patterns, and deployment strategies across major cloud platforms.',
+    title: "NPTEL Cloud Computing",
+    issuer: "NPTEL",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/en/f/f8/NPTEL_logo.png",
+    date: "2025",
+    skills: [
+      "Cloud Architecture",
+      "Virtualization",
+      "Distributed Systems",
+      "Cloud Services",
+    ],
+    credentialUrl:
+      "https://drive.google.com/file/d/157J0e32KvOEV0omMK1FJrvoZB-NduBQz/view?usp=drive_link",
+    description:
+      "Comprehensive course covering cloud computing fundamentals, architecture patterns, and deployment strategies across major cloud platforms.",
   },
 ];
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="section-padding bg-gray-50 dark:bg-slate-800/50">
+    <section
+      id="certifications"
+      className="section-padding bg-gray-50 dark:bg-slate-800/50"
+    >
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

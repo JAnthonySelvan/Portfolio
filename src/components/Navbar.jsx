@@ -1,20 +1,16 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sun, Moon, Download } from 'lucide-react';
-import { useTheme } from '../context/ThemeContext';
-<<<<<<< HEAD
-import Resume from "../../assets/My Resume.pdf";
-=======
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, Sun, Moon, Download } from "lucide-react";
+import { useTheme } from "../context/ThemeContext";
 
 const navItems = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Education', href: '#education' },
-  { name: 'Certifications', href: '#certifications' },
-  { name: 'Contact', href: '#contact' },
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Education", href: "#education" },
+  { name: "Certifications", href: "#certifications" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -26,15 +22,15 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleNavClick = (href) => {
     setMobileMenuOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -44,13 +40,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-<<<<<<< HEAD
         isScrolled ? "py-3 glass shadow-lg" : "py-4 bg-transparent"
-=======
-        isScrolled
-          ? 'py-3 glass shadow-lg'
-          : 'py-4 bg-transparent'
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,22 +50,14 @@ export default function Navbar() {
             href="#home"
             onClick={(e) => {
               e.preventDefault();
-<<<<<<< HEAD
               handleNavClick("#home");
-=======
-              handleNavClick('#home');
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             }}
             className="flex items-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <span className="text-2xl font-poppins font-bold text-gradient">
-<<<<<<< HEAD
               ANTHONYSELVAN J
-=======
-              Anthony Selvan
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             </span>
           </motion.a>
 
@@ -102,11 +84,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             {/* Resume Button - Desktop */}
             <motion.a
-<<<<<<< HEAD
               href="https://drive.google.com/uc?export=download&id=1U5hnzrKu1prPly4noMqE4jVFJYTByHeS"
-=======
-              href="#"
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               className="hidden lg:flex items-center gap-2 px-4 py-2 bg-primary dark:bg-primary-dark text-white rounded-lg font-medium text-sm hover:bg-primary/90 dark:hover:bg-primary-dark/90 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -124,11 +102,7 @@ export default function Navbar() {
               aria-label="Toggle theme"
             >
               <AnimatePresence mode="wait">
-<<<<<<< HEAD
                 {theme === "light" ? (
-=======
-                {theme === 'light' ? (
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
                   <motion.div
                     key="moon"
                     initial={{ rotate: -90, opacity: 0 }}
@@ -171,11 +145,7 @@ export default function Navbar() {
         {mobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-<<<<<<< HEAD
             animate={{ opacity: 1, height: "auto" }}
-=======
-            animate={{ opacity: 1, height: 'auto' }}
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="lg:hidden glass mt-2 mx-4 rounded-xl overflow-hidden"
@@ -198,7 +168,7 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <motion.a
-                href="#"
+                href="https://drive.google.com/uc?export=download&id=1U5hnzrKu1prPly4noMqE4jVFJYTByHeS"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: navItems.length * 0.05 }}

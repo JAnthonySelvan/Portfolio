@@ -1,29 +1,23 @@
-import { motion } from 'framer-motion';
-import { GraduationCap, Calendar, MapPin, BookOpen } from 'lucide-react';
+import { motion } from "framer-motion";
+import { GraduationCap, Calendar, MapPin, BookOpen } from "lucide-react";
 
 const educationData = [
   {
-    degree: 'Bachelor of Engineering',
-    field: 'Computer Science Engineering',
-<<<<<<< HEAD
-    institution: 'AAA College of Engineering and Technology',
-    location: 'sivakasi, Tamil Nadu',
-    duration: '2023 - Present',
-=======
-    institution: 'Engineering College',
-    location: 'India',
-    duration: '2022 - Present',
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
-    status: 'Pursuing',
+    degree: "Bachelor of Engineering",
+    field: "Computer Science Engineering",
+    institution: "AAA College of Engineering and Technology",
+    location: "sivakasi, Tamil Nadu",
+    duration: "2023 - Present",
+    status: "Pursuing",
     coursework: [
-      'Data Structures & Algorithms',
-      'Database Management Systems',
-      'Operating Systems',
-      'Computer Networks',
-      'Software Engineering',
-      'Web Technologies',
-      'Cloud Computing',
-      'Artificial Intelligence',
+      "Data Structures & Algorithms",
+      "Database Management Systems",
+      "Operating Systems",
+      "Computer Networks",
+      "Software Engineering",
+      "Web Technologies",
+      "Cloud Computing",
+      "Artificial Intelligence",
     ],
   },
 ];
@@ -51,7 +45,7 @@ export default function Education() {
           {/* Timeline Line */}
           <motion.div
             initial={{ height: 0 }}
-            whileInView={{ height: '100%' }}
+            whileInView={{ height: "100%" }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
             className="absolute left-8 sm:left-12 top-0 w-0.5 bg-gradient-to-b from-primary to-accent"
@@ -71,7 +65,7 @@ export default function Education() {
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.2, type: 'spring' }}
+                transition={{ delay: index * 0.2, type: "spring" }}
                 className="absolute left-4 sm:left-8 top-0 w-8 h-8 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center shadow-lg"
               >
                 <GraduationCap className="w-4 h-4 text-white" />
@@ -101,7 +95,9 @@ export default function Education() {
                 <div className="flex flex-wrap gap-4 mb-6 text-gray-600 dark:text-gray-400">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>{edu.institution}, {edu.location}</span>
+                    <span>
+                      {edu.institution}, {edu.location}
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
@@ -141,7 +137,7 @@ export default function Education() {
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.5, type: 'spring' }}
+            transition={{ delay: 0.5, type: "spring" }}
             className="relative left-4 sm:left-8 w-8 h-8 rounded-full bg-gradient-to-r from-accent to-primary flex items-center justify-center"
           >
             <div className="w-3 h-3 bg-white dark:bg-slate-900 rounded-full" />

@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,14 +17,11 @@ export default function Footer() {
             className="text-center md:text-left"
           >
             <h3 className="text-2xl font-poppins font-bold text-gradient mb-2">
-<<<<<<< HEAD
               ANTHONYSELVAN J
-=======
-              Anthony Selvan
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             </h3>
             <p className="text-gray-400 text-sm">
-              MERN Stack Developer | Building Scalable Web Applications and AI-Driven Solutions
+              MERN Stack Developer | Building Scalable Web Applications and
+              AI-Driven Solutions
             </p>
           </motion.div>
 
@@ -37,14 +34,11 @@ export default function Footer() {
             className="text-center"
           >
             <p className="text-gray-400 text-sm flex items-center justify-center gap-2">
-              Made with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> in India
+              Made with <Heart className="w-4 h-4 text-red-500 fill-red-500" />{" "}
+              in India
             </p>
             <p className="text-gray-500 text-sm mt-2">
-<<<<<<< HEAD
               &copy; {currentYear} ANTHONYSELVAN. All Rights Reserved.
-=======
-              &copy; {currentYear} Anthony Selvan. All Rights Reserved.
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
             </p>
           </motion.div>
 
@@ -57,11 +51,7 @@ export default function Footer() {
             className="flex justify-center md:justify-end gap-3"
           >
             <motion.a
-<<<<<<< HEAD
               href="https://github.com/JAnthonySelvan"
-=======
-              href="https://github.com/anthony-selvan"
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -3 }}
@@ -72,11 +62,7 @@ export default function Footer() {
               <Github className="w-5 h-5" />
             </motion.a>
             <motion.a
-<<<<<<< HEAD
               href="https://www.linkedin.com/in/anthonyselvan-j"
-=======
-              href="https://linkedin.com/in/anthony-selvan"
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -3 }}
@@ -85,15 +71,11 @@ export default function Footer() {
               aria-label="LinkedIn"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
             </motion.a>
             <motion.a
-<<<<<<< HEAD
               href="mailto:janthonyselvan07@gmail.com"
-=======
-              href="mailto:anthonyselvan@email.com"
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
               whileHover={{ scale: 1.1, y: -3 }}
               whileTap={{ scale: 0.95 }}
               className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"
@@ -113,11 +95,7 @@ export default function Footer() {
           className="mt-8 pt-8 border-t border-gray-800 text-center"
         >
           <p className="text-gray-500 text-xs">
-<<<<<<< HEAD
             Designed & Built by ANTHONYSELVAN J
-=======
-            Designed & Built by Anthony Selvan J
->>>>>>> d68a3c6d1db98bbf85c767cf5b62e90af0ce126e
           </p>
         </motion.div>
       </div>
