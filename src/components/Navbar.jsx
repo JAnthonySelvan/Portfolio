@@ -84,7 +84,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             {/* Resume Button - Desktop */}
             <motion.a
-              href="https://drive.google.com/uc?export=download&id=1U5hnzrKu1prPly4noMqE4jVFJYTByHeS"
+              href="https://drive.google.com/uc?export=download&id=1HR5MVgUxR12349G0n9hH4CSKtvf6I96V"
               className="hidden lg:flex items-center gap-2 px-4 py-2 bg-primary dark:bg-primary-dark text-white rounded-lg font-medium text-sm hover:bg-primary/90 dark:hover:bg-primary-dark/90 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
