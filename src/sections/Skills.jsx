@@ -1,63 +1,65 @@
-import { motion } from 'framer-motion';
-import { TechIcon } from '../components/TechIcon';
+import { motion } from "framer-motion";
+import { TechIcon } from "../components/TechIcon";
 
 const skillCategories = [
   {
-    title: 'Frontend',
-    color: 'from-blue-500 to-cyan-500',
+    title: "Frontend",
+    color: "from-blue-500 to-cyan-500",
     skills: [
-      { name: 'React', description: 'Component-based UI development' },
-      { name: 'JavaScript', description: 'ES6+, Async/Await, DOM' },
-      { name: 'HTML5', description: 'Semantic markup, Accessibility' },
-      { name: 'CSS3', description: 'Flexbox, Grid, Animations' },
-      { name: 'Tailwind', description: 'Utility-first CSS framework' },
+      { name: "React", description: "Component-based UI development" },
+      { name: "JavaScript", description: "ES6+, Async/Await, DOM" },
+      { name: "HTML5", description: "Semantic markup, Accessibility" },
+      { name: "CSS3", description: "Flexbox, Grid, Animations" },
+      { name: "Tailwind", description: "Utility-first CSS framework" },
     ],
   },
   {
-    title: 'Backend',
-    color: 'from-green-500 to-emerald-500',
+    title: "Backend",
+    color: "from-green-500 to-emerald-500",
     skills: [
-      { name: 'Node.js', description: 'Server-side JavaScript runtime' },
-      { name: 'Express', description: 'Web application framework' },
+      { name: "Node.js", description: "Server-side JavaScript runtime" },
+      { name: "Express", description: "Web application framework" },
+      { name: "Spring Boot", description: "Java-based backend framework" },
     ],
   },
   {
-    title: 'Database',
-    color: 'from-purple-500 to-violet-500',
+    title: "Database",
+    color: "from-purple-500 to-violet-500",
     skills: [
-      { name: 'MongoDB', description: 'NoSQL document database' },
-      { name: 'MongoDB Atlas', description: 'Cloud database service' },
+      { name: "MongoDB", description: "NoSQL document database" },
+      { name: "MongoDB Atlas", description: "Cloud database service" },
     ],
   },
   {
-    title: 'Programming',
-    color: 'from-orange-500 to-red-500',
+    title: "Programming",
+    color: "from-orange-500 to-red-500",
     skills: [
-      { name: 'Java', description: 'Object-oriented programming' },
-      { name: 'Python', description: 'Scripting & Data Science' },
-      { name: 'JavaScript', description: 'Full-stack development' },
+      { name: "Java", description: "Object-oriented programming" },
+      { name: "Python", description: "Scripting & Data Science" },
+      { name: "JavaScript", description: "Full-stack development" },
     ],
   },
   {
-    title: 'AI & Cloud',
-    color: 'from-pink-500 to-rose-500',
+    title: "AI & Cloud",
+    color: "from-pink-500 to-rose-500",
     skills: [
-      { name: 'AI', description: 'Artificial Intelligence concepts' },
-      { name: 'ML', description: 'Machine Learning fundamentals' },
-      { name: 'Cloud', description: 'Cloud Computing architecture' },
+      { name: "AI", description: "Artificial Intelligence concepts" },
+      { name: "ML", description: "Machine Learning fundamentals" },
+      { name: "Cloud", description: "Cloud Computing architecture" },
     ],
   },
   {
-    title: 'Tools',
-    color: 'from-gray-600 to-slate-600',
+    title: "Tools",
+    color: "from-gray-600 to-slate-600",
     skills: [
-      { name: 'Git', description: 'Version control system' },
-      { name: 'GitHub', description: 'Code hosting & collaboration' },
-      { name: 'VS Code', description: 'Code editor' },
-      { name: 'Postman', description: 'API testing tool' },
-      { name: 'Cloudinary', description: 'Media management cloud' },
-      { name: 'Vercel', description: 'Frontend deployment platform' },
-      { name: 'Render', description: 'Backend hosting platform' },
+      { name: "Git", description: "Version control system" },
+      { name: "GitHub", description: "Code hosting & collaboration" },
+      { name: "VS Code", description: "Code editor" },
+      { name: "Postman", description: "API testing tool" },
+      { name: "Cloudinary", description: "Media management cloud" },
+      { name: "Vercel", description: "Frontend deployment platform" },
+      { name: "Netlify", description: "Web hosting & deployment" },
+      { name: "Render", description: "Backend hosting platform" },
     ],
   },
 ];
