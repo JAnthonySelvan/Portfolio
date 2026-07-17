@@ -54,6 +54,43 @@ const architectureLayers = [
   { label: "Services", tech: "Cloudinary + Brevo Email", icon: Cloud },
 ];
 
+const otherProjects = [
+  {
+    title: "E-Commerce Website",
+    subtitle: "React.js E-Commerce Application",
+    description:
+      "Built a responsive e-commerce application using React.js with REST API integration for dynamic product listings, shopping cart, and checkout. Implemented search, filtering, sorting, and add-to-cart features using React Router and Redux. Optimized performance with lazy loading and designed a mobile-first UI using Tailwind CSS.",
+    tech: [
+      "React",
+      "Redux",
+      "REST API",
+      "React Router",
+      "Tailwind CSS",
+      "JavaScript",
+    ],
+    github: "https://github.com/JAnthonySelvan/E-Commerce-using-React",
+    live: "",
+  },
+  {
+    title: "Course Registration System",
+    subtitle: "React + Spring Boot Full Stack Application",
+    description:
+      "Built a full-stack course registration platform with a React frontend and Spring Boot backend connected through REST APIs. Students can browse and enroll in courses, while administrators manage course offerings through an intuitive dashboard.",
+    tech: ["React", "Spring Boot", "Java", "REST API", "MySQL"],
+    github: "https://github.com/JAnthonySelvan/Coures_Registration_System",
+    live: "",
+  },
+  {
+    title: "Personal Portfolio",
+    subtitle: "Developer Portfolio Website",
+    description:
+      "Designed and developed a modern developer portfolio showcasing projects, technical skills, certifications, and experience with responsive layouts, smooth animations, and dark/light mode support.",
+    tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+    github: "https://github.com/JAnthonySelvan/Portfolio",
+    live: "https://portfolio-anthonyselvan.netlify.app/",
+  },
+];
+
 export default function Projects() {
   const { theme } = useTheme();
 
@@ -285,6 +322,94 @@ export default function Projects() {
           </div>
         </motion.div>
       </div>
+
+      {/* Other Projects */}
+
+      <div className="mt-24">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
+          <h3 className="text-3xl sm:text-4xl font-poppins font-bold text-gray-900 dark:text-white">
+            Other <span className="text-gradient">Projects</span>
+          </h3>
+
+          <p className="mt-3 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            Additional projects demonstrating my expertise in React, Spring
+            Boot, REST APIs, responsive UI development, and modern web
+            technologies.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+          {otherProjects.map((project, index) => (
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -8 }}
+              className="glass-card rounded-2xl p-6 flex flex-col"
+            >
+              <h4 className="text-2xl font-bold text-gray-900 dark:text-white">
+                {project.title}
+              </h4>
+
+              <p className="text-primary font-medium mt-1 mb-4">
+                {project.subtitle}
+              </p>
+
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed flex-grow">
+                {project.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2 my-6">
+                {project.tech.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-4 mt-auto">
+                <motion.a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 transition"
+                >
+                  <Github size={18} />
+                  GitHub
+                </motion.a>
+
+                {project.live && (
+                  <motion.a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white hover:opacity-90 transition"
+                  >
+                    <ExternalLink size={18} />
+                    Live Demo
+                  </motion.a>
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
     </section>
   );
 }

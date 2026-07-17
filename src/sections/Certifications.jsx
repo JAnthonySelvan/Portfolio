@@ -3,20 +3,83 @@ import { Award, Calendar, ExternalLink, Check } from "lucide-react";
 
 const certifications = [
   {
-    title: "NPTEL Cloud Computing",
-    issuer: "NPTEL",
+    title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+    issuer: "Oracle University",
+    issuerLogo:
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
+    date: "Aug 2025",
+    skills: [
+      "Oracle Cloud Infrastructure",
+      "Cloud Computing",
+      "Compute & Storage",
+      "Networking",
+      "Identity & Access Management",
+      "Cloud Security",
+    ],
+    credentialUrl:
+      "https://drive.google.com/file/d/1SWiM4lUm5NaU3vaCB8HrwGiMFt0g0w0Q/view?usp=sharing",
+    description:
+      "Earned Oracle Cloud Infrastructure Foundations certification, demonstrating knowledge of OCI services, cloud architecture, networking, storage, security, and deployment fundamentals.",
+  },
+
+  {
+    title:
+      "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    issuer: "Oracle University",
+    issuerLogo:
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
+    date: "Aug 2025",
+    skills: [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Generative AI",
+      "Large Language Models",
+      "Responsible AI",
+      "OCI AI Services",
+    ],
+    credentialUrl:
+      "https://drive.google.com/file/d/1AEvBHdFCCmv6aut-nYw8fHj0NPETdT17/view?usp=sharing",
+    description:
+      "Certified in Oracle AI Foundations, covering AI concepts, machine learning, generative AI, large language models, and enterprise AI applications using Oracle Cloud.",
+  },
+
+  {
+    title: "NPTEL Cloud Computing (Elite)",
+    issuer: "NPTEL (IIT Kharagpur)",
     issuerLogo: "https://upload.wikimedia.org/wikipedia/en/f/f8/NPTEL_logo.png",
     date: "2025",
     skills: [
       "Cloud Architecture",
       "Virtualization",
       "Distributed Systems",
-      "Cloud Services",
+      "Cloud Computing",
+      "IaaS, PaaS & SaaS",
+      "Cloud Security",
     ],
     credentialUrl:
       "https://drive.google.com/file/d/157J0e32KvOEV0omMK1FJrvoZB-NduBQz/view?usp=drive_link",
     description:
-      "Comprehensive course covering cloud computing fundamentals, architecture patterns, and deployment strategies across major cloud platforms.",
+      "Completed the NPTEL Cloud Computing course with Elite certification, covering cloud architecture, virtualization, distributed systems, deployment models, and cloud service models.",
+  },
+
+  {
+    title: "Node.js (Intermediate)",
+    issuer: "HackerRank",
+    issuerLogo:
+      "https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png",
+    date: "Jul 2026",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "Asynchronous Programming",
+      "JavaScript",
+      "Backend Development",
+    ],
+    credentialUrl:
+      "https://drive.google.com/file/d/1MZ3kAl3T9D0JrCVUtm90cWIWc3bhA8Es/view?usp=sharing",
+    description:
+      "Validated intermediate-level proficiency in Node.js, including asynchronous programming, REST API development, Express.js integration, and backend application development.",
   },
 ];
 

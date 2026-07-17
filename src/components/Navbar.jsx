@@ -107,7 +107,7 @@ export default function Navbar() {
               <div className="flex items-center gap-2 flex-shrink-0">
                 {/* Resume Button - Desktop only */}
                 <motion.a
-                  href="https://drive.google.com/uc?export=download&id=1EC7rDRmtFUArrEqRNsiPyFAsgeDQR1Bh"
+                  href="https://drive.google.com/uc?export=download&id=1ER2sEXgFc48pwF7P3DzjfPuhvhL0gSEJ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hidden lg:flex items-center gap-2 px-4 py-2 bg-primary dark:bg-primary-dark text-white rounded-lg font-medium text-sm hover:bg-primary/90 dark:hover:bg-primary-dark/90 transition-all"
@@ -196,7 +196,7 @@ export default function Navbar() {
                     ))}
 
                     <motion.a
-                      href="https://drive.google.com/uc?export=download&id=1EC7rDRmtFUArrEqRNsiPyFAsgeDQR1Bh"
+                      href="https://drive.google.com/uc?export=download&id=1ER2sEXgFc48pwF7P3DzjfPuhvhL0gSEJ"
                       target="_blank"
                       rel="noopener noreferrer"
                       initial={{ opacity: 0, x: -20 }}
